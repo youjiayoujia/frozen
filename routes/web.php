@@ -17,4 +17,8 @@ Route::get('/', function () {
 
 Route::any('redis','Auth\LoginController@redis');
 
-Route::any('king','Owm\FacadeController@redis');
+Route::any('king','Own\FacadeController@king');
+
+Route::any('xrange','Own\FacadeController@xrange');
+
+Route::any('spider','Own\SpiderController@spider');

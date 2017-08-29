@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers\Own;
 
+use CustomTool;
+use App;
 use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use Illuminate\Support\Facades\Redis;
-use Illuminate\Support\Facades\Cache;
-
-class LoginController extends Controller
+class FacadeController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -19,13 +17,20 @@ class LoginController extends Controller
         
     }
 
-    public function redis(){
-        $aa = Redis::get('name');
-        print_r($aa);
-        Redis::lpush('urllist', 'www.sina.com');
-        // Cache::store('database')->put('bar11', 'baz22', 1);
-        // $value = Cache::get('bar11');
-        // print_r($value);
-        // echo 'test';
+    public function king(){
+        echo array(1, 2, 3)[0];
+echo [1, 2, 3][0];
+  
+echo "foobar"[4];
+
+        
+        exit;
+        CustomTool::query();
+    }
+
+    public function xrange($start = 1, $limit=6, $step = 1) {
+        for ($i = $start; $i <= $limit; $i += $step) {
+                yield $i;
+            }   
     }
 }

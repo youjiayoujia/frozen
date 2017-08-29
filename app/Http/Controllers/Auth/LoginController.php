@@ -42,7 +42,7 @@ class LoginController extends Controller
     public function redis(){
         $aa = Redis::get('name');
         print_r($aa);
-        Redis::lpush('urllist', 'www.sina.com');
+        Redis::lpush('urllistss', 'www.sina.com');
         // Cache::store('database')->put('bar11', 'baz22', 1);
         // $value = Cache::get('bar11');
         // print_r($value);
