@@ -40,6 +40,7 @@ class LoginController extends Controller
     }
 
     public function redis(){
+        
         $aa = Redis::get('name');
         print_r($aa);
         Redis::lpush('urllistss', 'www.sina.com');

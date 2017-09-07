@@ -22,3 +22,5 @@ Route::any('king','Own\FacadeController@king');
 Route::any('xrange','Own\FacadeController@xrange');
 
 Route::any('spider','Own\SpiderController@spider');
+
+Route::any('moni','Own\FacadeController@moni');
